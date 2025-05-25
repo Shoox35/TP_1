@@ -1,0 +1,9 @@
+[app]
+vm-1 ansible_user=azureuser
+vm-2 ansible_user=azureuser
+
+[mongodb]
+mongodb ansible_user=azureuser
+
+[all:vars]
+ansible_ssh_common_args='-F ssh_config'
